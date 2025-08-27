@@ -1,20 +1,21 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Insurance Pre-Check</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <div id="messages" class="messages"></div>
-  <div id="plan-select"></div>
-  <div class="controls">
-    <input id="front" type="file" accept="image/*" hidden>
-    <input id="back" type="file" accept="image/*" hidden>
-    <button id="attach" class="btn">Upload card photos</button>
-    <button id="send" class="btn" disabled>Verify</button>
-  </div>
-  <script src="app_plan.js"></script>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Insurance Pre‑Check</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="messages" class="messages"></div>
+    <div class="controls">
+      <!-- Hidden file inputs for front and back images -->
+      <input id="front" type="file" accept="image/*" hidden />
+      <input id="back" type="file" accept="image/*" hidden />
+      <!-- Upload and verify buttons -->
+      <button id="attach" class="btn">Upload card photos</button>
+      <button id="send" class="btn" disabled>Verify</button>
+    </div>
+    <script src="app.js"></script>
+  </body>
 </html>
