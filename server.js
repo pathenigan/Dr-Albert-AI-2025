@@ -24,7 +24,7 @@
     let workerReady = false;
     async function ensureWorker() {
       if (!workerReady) {
-        await worker.load();
+        // tesseract.js v5 no longer exposes worker.load()
         await worker.loadLanguage('eng');
         await worker.initialize('eng');
         workerReady = true;
