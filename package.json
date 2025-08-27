@@ -1,9 +1,13 @@
 {
-  "name": "dr-albert-bot-chat",
+  "name": "dr-albert-bot-ocr",
   "version": "1.0.0",
+  "description": "Insurance pre-check chatbot using OCR to classify insurance plans and determine eligibility.",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
   },
-  "dependencies": {}
+  "dependencies": {
+    "tesseract.js": "^4.0.2",
+    "@tensorflow/tfjs-node": "^4.10.0"
+  }
 }
